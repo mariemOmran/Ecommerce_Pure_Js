@@ -1,0 +1,175 @@
+body {
+    /* background: #C1908B; */
+    background: #B79891;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #94716B, #B79891);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #94716B, #B79891);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.counter h1 {
+    color: #fff;
+    text-align: center;
+    margin: 40px 0px 0px;
+    font-size: 40px;
+}
+
+.counter-inner {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fff;
+    margin-top: 10px;
+    border-radius: 35px;
+}
+
+@media (max-width:960px) {
+    .counter-inner {
+        width: 80vw;
+    }
+}
+
+
+
+.total-product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+
+
+.counter-inner img {
+    width: 100px;
+    margin-right: 30px;
+}
+
+.counter-inner h5,
+.sumPrice {
+    font-size: 20px;
+    margin: 10px 0px 0px;
+    width: 100%;
+    text-align: center;
+
+}
+
+.counter-inner input {
+    width: 100px;
+    height: 20px;
+    margin: 30px 32px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px grey;
+    border: 3px solid transparent;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.counter-inner input:hover {
+    box-shadow: 5px 5px 10px grey;
+    background-color: #C1908B;
+    color: #fff;
+    border: 3px solid #fff;
+    outline: none;
+}
+
+.counter-inner input::placeholder {
+    color: #000;
+}
+
+.counter-inner .btn {
+    width: 50px;
+    height: 31px;
+    background-color: #323232c7;
+    color: #fff;
+    border: 3px solid #fff;
+    outline: none;
+    box-shadow: 5px 5px 10px grey;
+    font-size: 19px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.counter-inner .btn-buy {
+    width: 100%;
+}
+
+.counter-inner .btn:hover {
+    background-color: #C1908B;
+    color: #fff;
+}
+
+.divBtnIorD {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.counter-inner .btns_quantity {
+    display: flex;
+    align-items: center;
+}
+
+.sumPrice {
+    text-align: center;
+    font-weight: 800;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width:715px) {
+    .counter-inner {
+        width: 90vw;
+        padding: 30px 10px;
+    }
+
+    .total-product {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .total-product>div {
+        margin-top: 20px;
+    }
+
+    .counter-inner input {
+        width: 75px;
+        height: 25px;
+        margin: 20px 24px;
+        padding: 10px;
+        box-shadow: 5px 5px 10px grey;
+        border: 3px solid transparent;
+        outline: none;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .counter-inner .btn {
+        width: 45px;
+        height: 30px;
+        background-color: #323232c7;
+        color: #fff;
+        border: 3px solid #fff;
+        outline: none;
+        box-shadow: 5px 5px 10px grey;
+        font-size: 17px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    .counter-inner h5,
+    .sumPrice {
+        font-size: 22px;
+        margin: 10px 0px 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .counter-inner img {
+        width: 120px;
+        margin-right: 30px;
+    }
+}

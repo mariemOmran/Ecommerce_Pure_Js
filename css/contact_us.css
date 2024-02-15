@@ -1,0 +1,197 @@
+body {
+    /* background: linear-gradient(to right ,#0f2027,#203a43,#2c5364); */
+    background: #B79891;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #94716B, #B79891);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #94716B, #B79891);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* header or navbar  */
+:root {
+    --margin-top: 40px;
+    --secColor: rgb(207, 118, 118);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+.icons {
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 35%;
+}
+
+.car {
+    position: relative;
+}
+
+.car span {
+    content: '0';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #281e1e33;
+    z-index: -1;
+    top: -9px;
+    left: 11px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    font-weight: bold;
+}
+
+.car #car-icon {
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* break points */
+@media(max-width:992px) {
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width:786px) {
+    .icons {
+        display: inline-flex;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        transition: .3s ease;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .clickNavbar {
+        height: 17.7rem;
+    }
+
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    a.clickLink {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* header or navbar  */
+form {
+    width: 300px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 2px;
+}
+
+form h2 {
+    color: #0f2027;
+    text-align: center;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+
+form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(41, 57, 194);
+    border: none;
+    border-radius: 4px;
+}
+
+.input_control {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_control input {
+    border: 2px solid #f0f0f0;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 4px;
+    display: block;
+    width: 90%;
+}
+
+.input_control .error {
+    color: #ff3860;
+    height: 13px;
+    font-size: 9px;
+}
+
+/* end about  */

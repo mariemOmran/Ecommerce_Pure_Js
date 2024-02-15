@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="../css/contact_us.css">
+  <title>contact us</title>
+</head>
+
+<body>
+  <!-- header or nav bar  -->
+  <header class="header">
+    <a href="index.html" class="logo">MariemOmran</a>
+    <label class="icons">
+      <i class='bx bx-menu' id="icon-menue"></i>
+      <i class='bx bx-x' id="close-icon"></i>
+    </label>
+    <div class="navbar">
+      <a href="home.html" data-num="0">Home</a>
+      <a href="#products" data-num="3">products</a>
+      <a href="#about" data-num="1">About</a>
+      <a href="contact_us.html" data-num="2">contact us</a>
+    </div>
+    <a href="car.html">
+      <div class="car">
+        <span>0</span>
+        <i class='bx bxs-cart' id="car-icon"></i>
+      </div>
+    </a>
+  </header>
+
+  <!-- header or nav bar  -->
+  <div class="container">
+    <form action="">
+      <h2>contact us</h2>
+      <div class="input_control">
+        <input type="text" id="user_name" placeholder="user name">
+        <div class="error"></div>
+      </div>
+      <div class="input_control">
+        <input type="text" id="email" placeholder="Email">
+        <div class="error"></div>
+      </div>
+      <div class="input_control">
+        <input type="password" id="password" placeholder="password">
+        <div class="error"></div>
+      </div>
+      <div class="input_control">
+        <input type="password" id="confrim_passward" placeholder="confirm Passward">
+        <div class="error"></div>
+      </div>
+      <button type="submit">submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/all.min.js"></script>
+  <script src="../js/contact_us.js"></script>
+</body>
+
+</html>

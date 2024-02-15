@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/all.min.css">
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <title>Home</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">Mariem</a>
+    <label class="icons">
+      <i class='bx bx-menu' id="icon-menue"></i>
+      <i class='bx bx-x' id="close-icon"></i>
+    </label>
+    <div class="navbar">
+      <a href="home.html" data-num="0">Home</a>
+      <a href="#products" data-num="3">products</a>
+      <a href="#about" data-num="1">About</a>
+      <a href="contact_us.html" data-num="2">contact us</a>
+    </div>
+    <a href="car.html">
+      <div class="car">
+        <span>0</span>
+        <i class='bx bxs-cart' id="car-icon"></i>
+      </div>
+    </a>
+  </header>
+  <div class="sliderImages">
+    <div class="img">
+      <div class="item">
+        <img src="../images/img-1.jpg" alt="" srcset="">
+      </div>
+      <div class="item">
+        <img src="../images/img-2.jpg" alt="" srcset="">
+      </div>
+      <div class="item">
+        <img src="../images/img-3.jpg" alt="" srcset="">
+      </div>
+      <div class="item">
+        <img src="../images/img-4.jpg" alt="" srcset="">
+      </div>
+    </div>
+    <div class="buttons">
+      <div id="next"><i class='bx bx-chevron-left'></i></div>
+      <div id="prev"><i class='bx bx-chevron-right'></i></div>
+    </div>
+    <!-- dots -->
+    <ul class="dots">
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <!-- catigouries -->
+  <div class="categories" id="products">
+    <div class="name-category">
+      <p class="btn-clicked">all</p>
+      <p data-category="phones">iphons</p>
+      <p data-category="laptops">laptob</p>
+    </div>
+    <div class="pic-category">
+    </div>
+  </div>
+  <!--start about us -->
+  <div id="about">
+    <div class="head_about">
+      <h1>About Us</h1>
+    </div>
+    <div class="container">
+      <h2>Our Story</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in magna nisi. Mauris lobortis nunc eget
+        scelerisque posuere. Fusce feugiat interdum lorem, eget mattis ipsum vestibulum vel.</p>
+      <p>Nulla facilisi. Proin condimentum, lectus vel tincidunt tincidunt, nisi erat hendrerit augue, sit amet feugiat
+        nulla mi et dolor. Donec in mi in velit tristique euismod. Fusce semper neque nec ipsum molestie, a tempus orci
+        hendrerit.</p>
+
+      <h2>Our Team</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus in magna nisi. Mauris lobortis nunc eget
+        scelerisque posuere. Fusce feugiat interdum lorem, eget mattis ipsum vestibulum vel.</p>
+      <ul>
+        <li>John Doe - CEO</li>
+        <li>Jane Smith - CTO</li>
+        <li>Michael Johnson - CFO</li>
+      </ul>
+    </div>
+  </div>
+  <!--end about us -->
+  <!-- start footer -->
+  <!-- start footer -->
+  <footer>
+    <div class="container">
+      <div class="icons-social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+        <i class="fa-brands fa-pinterest"></i>
+      </div>
+      <p>&copy; Copyright. Designed And Developed By Themesine</p>
+    </div>
+
+  </footer>
+  <!-- end footer -->
+  <!-- end footer -->
+  <span class="up"><i class='bx bxs-upvote'></i></span>
+  <div class="card-car"></div>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../js/all.min.js"></script>
+  <script src="sweetalert2.min.js"></script>
+  <script src="../js/home.js"></script>
+</body>
+
+</html>
